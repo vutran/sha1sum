@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func CheckUrl(url string) [20]byte {
+func CheckUrl(url string) [sha1.Size]byte {
 	res, err := http.Get(url)
 
 	if err != nil {
